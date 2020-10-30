@@ -16,7 +16,7 @@ app.use('/admin' ,adminRoutes.routes);
 console.log('wsel');
 app.use('/' ,shopRoutes.router);
 app.use ((req,res)=>{
-    res.status(404).render('404', {pageTitle: 'page not found'});
+    res.status(404).render('404', {pageTitle: 'page not found', path:''});
 })
 
 try {
